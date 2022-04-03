@@ -1,5 +1,147 @@
-.center{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.container {
+    background-image: url(./assets/background/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.box {
+    background: rgb(255, 255, 255);
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.562);
+}
+
+.box_register {
+    background: rgb(255, 255, 255);
+    width: 450px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.562);
+}
+
+.center_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.top_fix{
+    margin-top: 40px;
+}
+
+.txt{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: rgb(97, 92, 92);
+    text-align: start;
+    margin-top: 4px;
+    margin-left:60px;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    margin-top: 25px;
+}
+
+.inputs{
+    margin-bottom: 20px;
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+    margin-top: 7px;
+    border-radius: 50px;
+    border: 1px solid rgb(97, 92, 92);
+}
+
+.inputs_register{
+    margin-bottom: 20px;
+    width: 75%;
+    height: 30px;
+    padding: 10px;
+    margin-top: 7px;
+    border-radius: 50px;
+    border: 1px solid rgb(97, 92, 92);
+}
+
+.inputs:focus{
+    outline: none !important;
+    border:1.5px solid rgb(166, 20, 202);
+}
+
+/* btn_design  */
+.btn-hover {
+    width: 65%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    height: 45px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+
+    border-radius: 50px;
+    /* moz-transition: all .4s ease-in-out; */
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    /* moz-transition: all .4s ease-in-out; */
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+/* End of btn_design */
+
+.footer_txt{
+    margin: 40px;
+}
+
+.footer_txt_register{
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color:#1b75eb
+}
+
+.btn_fix{
+    margin-top: 15px;
+}
+
+.btn_fix_register{
+    margin-bottom: 15px;
+}
+
+.hr_top{
+    margin-top: -20px;
+}
+.horizontal_line{
+    width:60%;
+    margin: auto;
+}
+
+/*! Register Styles */
+
