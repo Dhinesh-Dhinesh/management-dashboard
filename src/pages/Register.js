@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 
 export default function Resister() {
+
+  const [input, setInput] = useState({
+    name: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setInput(prevInput => ({
+      ...prevInput,
+      [name]: value
+    }));
+  }
+
   return (
     <div className='container'>
       <div className='center_box'>
@@ -14,25 +30,29 @@ export default function Resister() {
             </div>
             <div className='center'>
 
-              <input className='inputs_register' placeholder="Enter your name" />
+              <input className='inputs_register' name="name" placeholder="Enter your name"
+                onChange={handleChange} value={input.name}/>
             </div>
             <div className='txt'>
               <h3>Email:</h3>
             </div>
             <div className='center'>
-              <input className='inputs_register' placeholder="Enter your email" />
+              <input className='inputs_register' name="email" placeholder="Enter your email"
+                onChange={handleChange} value={input.email} />
             </div>
             <div className='txt'>
               <h3>Password:</h3>
             </div>
             <div className='center'>
-              <input className='inputs_register'  type="password" placeholder="New password" />
+              <input className='inputs_register' type="password" name="password" 
+              placeholder="New password" onChange={handleChange} value={input.password} />
             </div>
             <div className='txt'>
               <h3>Confirm Password:</h3>
             </div>
             <div className='center'>
-              <input className='inputs_register' type="password" placeholder="Re-enter Password" />
+              <input className='inputs_register' type="password" name="confirmPassword"
+               placeholder="Re-enter Password" onChange={handleChange} value={input.confirmPassword} />
             </div>
             <div className='center btn_fix_register'>
               <button className='btn-hover'>Sign Up</button>

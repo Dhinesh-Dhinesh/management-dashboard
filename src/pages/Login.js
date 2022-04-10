@@ -10,11 +10,11 @@ export default function LogIn() {
           <h1 className='center title'>Login</h1>
           <div className='top_fix'>
             <div className='txt'>
-              <h3>Username:</h3>
+              <h3>Email:</h3>
             </div>
             <div className='center'>
 
-              <input className='inputs' placeholder="Username" />
+              <input className='inputs' placeholder="Email" />
             </div>
             <div className='txt'>
               <h3>Password:</h3>
